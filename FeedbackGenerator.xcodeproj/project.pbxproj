@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AE3851ABD07C04D207123CA /* libPods-FeedbackGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4A45C3FCE66A1F9883412 /* libPods-FeedbackGenerator.a */; };
 		B1CBAF2420E9CE9B0000FCC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBAF2320E9CE9B0000FCC7 /* AppDelegate.m */; };
 		B1CBAF2720E9CE9B0000FCC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBAF2620E9CE9B0000FCC7 /* ViewController.m */; };
 		B1CBAF2A20E9CE9B0000FCC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CBAF2820E9CE9B0000FCC7 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9EF6F6F4950D1666ED9E68A4 /* Pods-FeedbackGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedbackGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedbackGenerator/Pods-FeedbackGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		B1CBAF1F20E9CE9B0000FCC7 /* FeedbackGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CBAF2220E9CE9B0000FCC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1CBAF2320E9CE9B0000FCC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		B1CBAF3720E9CE9C0000FCC7 /* FeedbackGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CBAF3B20E9CE9C0000FCC7 /* FeedbackGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackGeneratorTests.m; sourceTree = "<group>"; };
 		B1CBAF3D20E9CE9C0000FCC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB29BBC695406E7CC674272 /* Pods-FeedbackGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedbackGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeedbackGenerator/Pods-FeedbackGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B4A45C3FCE66A1F9883412 /* libPods-FeedbackGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeedbackGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE3851ABD07C04D207123CA /* libPods-FeedbackGenerator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1068DAD11F86930C72A95B68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCB29BBC695406E7CC674272 /* Pods-FeedbackGenerator.debug.xcconfig */,
+				9EF6F6F4950D1666ED9E68A4 /* Pods-FeedbackGenerator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46FB34698F4A6E06FCA50235 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4A45C3FCE66A1F9883412 /* libPods-FeedbackGenerator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B1CBAF1620E9CE9B0000FCC7 = {
 			isa = PBXGroup;
 			children = (
 				B1CBAF2120E9CE9B0000FCC7 /* FeedbackGenerator */,
 				B1CBAF3A20E9CE9C0000FCC7 /* FeedbackGeneratorTests */,
 				B1CBAF2020E9CE9B0000FCC7 /* Products */,
+				1068DAD11F86930C72A95B68 /* Pods */,
+				46FB34698F4A6E06FCA50235 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1CBAF4020E9CE9C0000FCC7 /* Build configuration list for PBXNativeTarget "FeedbackGenerator" */;
 			buildPhases = (
+				F56D4D035A787CD0E183819B /* [CP] Check Pods Manifest.lock */,
 				B1CBAF1B20E9CE9B0000FCC7 /* Sources */,
 				B1CBAF1C20E9CE9B0000FCC7 /* Frameworks */,
 				B1CBAF1D20E9CE9B0000FCC7 /* Resources */,
@@ -197,6 +222,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F56D4D035A787CD0E183819B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeedbackGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1CBAF1B20E9CE9B0000FCC7 /* Sources */ = {
@@ -359,6 +405,7 @@
 		};
 		B1CBAF4120E9CE9C0000FCC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB29BBC695406E7CC674272 /* Pods-FeedbackGenerator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +424,7 @@
 		};
 		B1CBAF4220E9CE9C0000FCC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EF6F6F4950D1666ED9E68A4 /* Pods-FeedbackGenerator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
